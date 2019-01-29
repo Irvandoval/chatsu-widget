@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import * as store from 'store';
+import MessageArea from "./MessageArea";
 
 export default class Chat extends Component {
 
@@ -7,13 +8,18 @@ export default class Chat extends Component {
     super(props);
     if (store.enabled) {
       this.messagesKey = 'messages' + '.' + props.chatId + '.' + props.host;
-      this.state.message = store.get(this.messagesKey) || store.set(this.messagesKey, []);
+      const messagevalue = store.get(this.messagesKey) || store.set(this.messagesKey, []);
+      this.state = {
+        message: messagevalue
+      };
     } else {
-      this.state.messages = [];
+      this.state = {
+        message: []
+      };
     }
 
-    autoResponseState = 'active';
-    autoResponseTime = 0;
+    this.autoResponseState = 'active';
+    this.autoResponseTime = 0;
   }
 
   componentDidMount() {
@@ -63,7 +69,7 @@ export default class Chat extends Component {
   writeToMessages(msg) {
     msg.time = new Date();
     this.setState({
-      message: this.state.messages.push(msg)
+      message: [...this.state.messages, (msg)]
     });
 
     if (store.enabled) {
@@ -79,7 +85,7 @@ export default class Chat extends Component {
   render() {
     return (
       <div>
-        <MessageArea messages={state.message} conf={this.props.conf}/>
+        <MessageArea messages={this.state.message} conf={this.props.conf}/>
 
         <input class="textarea" type="text" placeholder={this.props.conf.placeholderText}
           ref={input => this.input = input}

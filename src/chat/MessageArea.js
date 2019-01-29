@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import dateFormat from 'dateformat';
+import "./chat.css"
 
 const dayInMillis = 60 * 60 * 24 * 1000;
 
@@ -17,7 +18,7 @@ export default class MessageArea extends Component {
 
     return (
       <ol class="chat">
-        {props.messages.map(({name, text, from, time}) => {
+        {this.props.messages.map(({name, text, from, time}) => {
           if (from === 'visitor') {
             name = "You"
           }
@@ -25,7 +26,7 @@ export default class MessageArea extends Component {
             <li class={from}>
               <div class="msg">
                 <p>{name ? name + ": " + text : text}</p>
-                { (props.conf.displayMessageTime) ?
+                { (this.props.conf.displayMessageTime) ?
                     <div class="time">
                       {
                         currentTime - new Date(time) < dayInMillis ?
