@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom';
 import Widget from './Widget';
+import { defaultConfiguration } from './defaultConfiguration';
 
 const injectChat = () => {
 
@@ -10,7 +11,7 @@ const injectChat = () => {
   const server = window.chatWidgetServer || '';
   const iFrameSrc = `${server}/chat.html`;
   const host = window.location.host || 'unknown-host';
-  const conf = {};
+  const conf = {...defaultConfiguration, ...window.CxChatWidgetCustomizations};
 
   ReactDOM.render(<Widget 
     widgetId={window.chatWidgetId}

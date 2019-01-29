@@ -3,7 +3,7 @@ import React from 'react'
 const ArrowIcon = isOpened => {
   return (
     <div>
-    { (this.props.isOpened) ?
+    { (isOpened) ?
         <svg style={{
           marginRight: 15,
           marginTop: 6,
