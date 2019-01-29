@@ -9,7 +9,7 @@
     "build": "webpack --mode=production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Mauricio Martinez",
+  "author": "Digital Channels",
   "license": "MIT",
   "devDependencies": {
     "webpack-dev-server": "^3.1.14"
@@ -23,6 +23,7 @@
     "body-parser": "^1.18.3",
     "cors": "^2.8.5",
     "css-loader": "^2.1.0",
+    "dateformat": "^3.0.3",
     "eslint": "^5.12.1",
     "eslint-loader": "^2.1.1",
     "eslint-plugin-react": "^7.12.4",
