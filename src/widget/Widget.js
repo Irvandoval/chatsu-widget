@@ -15,8 +15,16 @@ export default class Widget extends Component {
 
   constructor(props) {
     super(props);
-    this.state.isChatOpen = false;
+    this.state = {isChatOpen: false};
+    this.onClick = this.onClick.bind(this);
   }
+
+  onClick() {
+    let stateData = {
+      isChatOpen: !this.state.isChatOpen,
+    }
+    this.setState(stateData);
+  };
 
   render() {
     const conf = this.props.conf;
@@ -39,13 +47,6 @@ export default class Widget extends Component {
       wrapperStyle = mobileOpenWrapperStyle; // open mobile wrapper should have no border
     }
 
-    onClick = () => {
-      let stateData = {
-        isChatOpen: !this.state.isChatOpen,
-      }
-      this.setState(stateData);
-    };
-    
     return (
       <div style={wrapperStyle}>
         { /* Open/close button */ }
