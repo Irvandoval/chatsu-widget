@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MessageArea /> matches the snapshot 1`] = `
+<ol
+  class="chat"
+/>
+`;
