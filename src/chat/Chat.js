@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import * as store from 'store';
 import MessageArea from "./MessageArea";
 
 export default class Chat extends Component {
 
   constructor(props) {
     super(props);
+    const store = this.props.store;
     if (store.enabled) {
       this.messagesKey = 'messages' + '.' + props.chatId + '.' + props.host;
       const messagevalue = store.get(this.messagesKey) || store.set(this.messagesKey, []);
