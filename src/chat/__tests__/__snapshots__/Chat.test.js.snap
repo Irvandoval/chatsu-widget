@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Chat /> matches the snapshot 1`] = `
+<div>
+  <ol
+    class="chat"
+  />
+  <input
+    class="textarea"
+    onKeyPress={[Function]}
+    placeholder="test"
+    type="text"
+  />
+  <a
+    class="banner"
+    href="https://github.com/serenovaLLC"
+    target="_blank"
+  >
+    Powered by 
+    <b>
+      Serenova
+    </b>
+  </a>
+</div>
+`;

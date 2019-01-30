@@ -42,6 +42,7 @@ function ChatIndex() {
       userId={userId}
       host={urlParameter}
       conf={conf}
+      store={store}
     />,
     document.getElementById('chatWidget')
   );
