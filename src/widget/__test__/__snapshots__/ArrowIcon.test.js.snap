@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ArrowIcon /> matches the snapshot 1`] = `
+<div>
+  <svg
+    fill="#FFFFFF"
+    height="15"
+    style={
+      Object {
+        "marginRight": 15,
+        "marginTop": 6,
+        "verticalAlign": "middle",
+      }
+    }
+    viewBox="0 0 15 15"
+    width="15"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <line
+      stroke="white"
+      stroke-width="1"
+      x1="1"
+      x2="15"
+      y1="15"
+      y2="1"
+    />
+    <line
+      stroke="white"
+      stroke-width="1"
+      x1="1"
+      x2="15"
+      y1="1"
+      y2="15"
+    />
+  </svg>
+</div>
+`;

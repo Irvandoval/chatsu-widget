@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Frame /> matches the snapshot 1`] = `
+<iframe
+  frameBorder="0"
+  height="100%"
+  src="undefined?id=undefined&host=undefined&conf=%7B%7D"
+  title="CxChatWidgetiFrame"
+  width="100%"
+/>
+`;
