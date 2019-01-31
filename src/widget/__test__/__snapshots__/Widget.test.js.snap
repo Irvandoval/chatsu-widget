@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Widget /> matches the snapshot 1`] = `
+<div
+  style={
+    Object {
+      "bottom": "0px",
+      "boxSizing": "content-box",
+      "minHeight": "120px",
+      "minWidth": "400px",
+      "overflow": "hidden",
+      "position": "fixed",
+      "right": "0px",
+      "zIndex": 2147483647,
+    }
+  }
+>
+  <Header
+    conf={Object {}}
+    onClick={[Function]}
+  />
+  <div
+    style={
+      Object {
+        "display": "none",
+        "height": undefined,
+      }
+    }
+  >
+    <Frame
+      conf={Object {}}
+    />
+  </div>
+</div>
+`;

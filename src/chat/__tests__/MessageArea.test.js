@@ -1,7 +1,7 @@
 import React from 'react';
 import MessageArea from '../MessageArea';
-import TestRenderer from 'react-test-renderer';
 import { JSDOM } from 'jsdom';
+import { shallow } from 'enzyme';
 
 const dom = new JSDOM();
 global.document = dom.window.document;
@@ -13,7 +13,7 @@ global.window.scrollTo = function() {
 describe('<MessageArea />', () => {
     it('matches the snapshot', () => {
       const messages = [];
-      const tree = TestRenderer.create(<MessageArea messages={messages}/>);
+      const tree = shallow(<MessageArea messages={messages}/>);
       expect(tree).toMatchSnapshot();
     });
 })

@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> matches the snapshot 1`] = `
+<div
+  style={
+    Object {
+      "cursor": "pointer",
+      "position": "relative",
+    }
+  }
+>
+  <div
+    className="desktop-closed-message"
+    style={
+      Object {
+        "background": undefined,
+        "borderRadius": "5px",
+        "boxShadow": "#8e8d8d -3px 2px 20px",
+        "color": "#fff",
+        "display": "block",
+        "fontSize": "14px",
+        "letterSpacing": "1px",
+        "marginTop": "23px",
+        "padding": "15px 20px",
+        "position": "absolute",
+        "right": "130px",
+        "top": 0,
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "borderBottom": "10px solid transparent",
+          "borderLeft": "10px solid undefined",
+          "borderTop": "10px solid transparent",
+          "height": 0,
+          "position": "absolute",
+          "right": "-10px",
+          "top": "12px",
+          "width": 0,
+        }
+      }
+    />
+  </div>
+  <div
+    className="desktop-closed-message-avatar"
+    style={
+      Object {
+        "background": "#fff",
+        "border": "2px solid undefined",
+        "borderRadius": "999px",
+        "boxShadow": "#8e8d8d -3px 2px 20px",
+        "display": "block",
+        "height": "60px",
+        "position": "absolute",
+        "right": "40px",
+        "top": "10px",
+        "width": "60px",
+      }
+    }
+  >
+    <img
+      alt="Avatar"
+      style={
+        Object {
+          "borderRadius": "999px",
+          "height": "auto",
+          "width": "100%",
+        }
+      }
+    />
+    <div
+      style={
+        Object {
+          "background": "#d0021b",
+          "borderRadius": "999px",
+          "bottom": "-5px",
+          "color": "#fff",
+          "fontSize": "0.8em",
+          "fontWeight": 600,
+          "height": "20px",
+          "lineHeight": "20px",
+          "position": "absolute",
+          "right": "-5px",
+          "textAlign": "center",
+          "width": "20px",
+        }
+      }
+    >
+      1
+    </div>
+  </div>
+</div>
+`;
