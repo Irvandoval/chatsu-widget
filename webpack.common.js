@@ -3,7 +3,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 
 module.exports = {
-  devtool: 'source-map',
   entry: {
     widget: [
       path.join(__dirname, 'src', 'widget', 'injectChat.js')
@@ -54,4 +53,4 @@ module.exports = {
       chunkFilename: '[id}.css'
     })
   ]
-};
+}

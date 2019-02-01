@@ -1,11 +1,11 @@
 import React from 'react'
 import {mobileTitleStyle} from './styles';
 
-const FloatingButton = (color, onClick) => {
+const FloatingButton = props => {
   return (
     <div
-      style={{background: color, ...mobileTitleStyle}}
-      onClick={onClick}>
+      style={{background: props.color, ...mobileTitleStyle}}
+      onClick={props.onClick}>
 
       <svg style={{paddingTop: 4}}
         fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24"

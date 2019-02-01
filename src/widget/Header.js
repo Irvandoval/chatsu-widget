@@ -1,12 +1,12 @@
 import React from 'react'
 
-const Header = (isOpened, conf, onClick) => {
+const Header = props => {
   return (
-    <div style={{position: 'relative', cursor: 'pointer'}} onClick={onClick}>
+    <div style={{position: 'relative', cursor: 'pointer'}} onClick={props.onClick}>
       <div 
           className="desktop-closed-message"
           style={{
-              background: conf.mainColor,
+              background: props.conf.mainColor,
               letterSpacing: '1px',
               color: '#fff',
               display: 'block',
@@ -19,7 +19,7 @@ const Header = (isOpened, conf, onClick) => {
               padding: '15px 20px',
               boxShadow: '#8e8d8d -3px 2px 20px',
           }}>
-        {conf.introMessage}
+        {props.conf.introMessage}
         <div
             style={{
                 width: 0,
@@ -46,7 +46,7 @@ const Header = (isOpened, conf, onClick) => {
             boxShadow: '#8e8d8d -3px 2px 20px',
             border: '2px solid '+conf.mainColor
         }}>
-          {(conf.closedChatAvatarUrl === '') ?
+          {(props.conf.closedChatAvatarUrl === '') ?
             <svg style={{
                     width: '100%',
                     height: 'auto',
@@ -58,7 +58,7 @@ const Header = (isOpened, conf, onClick) => {
             </svg>
             :
             <img 
-                src={conf.closedChatAvatarUrl} 
+                src={props.conf.closedChatAvatarUrl} 
                 alt="Avatar"
                 style={{
                     width: '100%',
