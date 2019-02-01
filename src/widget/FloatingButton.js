@@ -1,7 +1,7 @@
 import React from 'react'
 import {mobileTitleStyle} from './styles';
 
-const FloatingButton = props => {
+const FloatingButton = (props) => {
   return (
     <div
       style={{background: props.color, ...mobileTitleStyle}}

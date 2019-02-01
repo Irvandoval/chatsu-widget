@@ -2,6 +2,6 @@
 
 exports[`<MessageArea /> matches the snapshot 1`] = `
 <ol
-  class="chat"
+  className="chat"
 />
 `;

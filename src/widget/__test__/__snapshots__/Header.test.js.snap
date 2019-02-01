@@ -2,6 +2,7 @@
 
 exports[`<Header /> matches the snapshot 1`] = `
 <div
+  onClick={[MockFunction]}
   style={
     Object {
       "cursor": "pointer",

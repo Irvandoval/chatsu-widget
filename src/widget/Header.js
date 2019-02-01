@@ -29,7 +29,7 @@ const Header = props => {
                 right: '-10px',
                 borderTop: '10px solid transparent',
                 borderBottom: '10px solid transparent',
-                borderLeft: '10px solid '+conf.mainColor
+                borderLeft: '10px solid ' + props.conf.mainColor
             }}/>
       </div>
       <div 
@@ -44,7 +44,7 @@ const Header = props => {
             width: '60px',
             borderRadius: '999px',
             boxShadow: '#8e8d8d -3px 2px 20px',
-            border: '2px solid '+conf.mainColor
+            border: '2px solid ' + props.conf.mainColor
         }}>
           {(props.conf.closedChatAvatarUrl === '') ?
             <svg style={{

@@ -4,31 +4,66 @@ exports[`<Widget /> matches the snapshot 1`] = `
 <div
   style={
     Object {
-      "bottom": "0px",
+      "background": "rgb(229, 229, 229)",
+      "borderRadius": "10px",
+      "bottom": "20px",
+      "boxShadow": "0px 0px 30px rgba(0, 0, 0, 0.5)",
       "boxSizing": "content-box",
-      "minHeight": "120px",
-      "minWidth": "400px",
       "overflow": "hidden",
       "position": "fixed",
-      "right": "0px",
+      "right": "20px",
       "zIndex": 2147483647,
     }
   }
 >
-  <Header
-    conf={Object {}}
+  <div
     onClick={[Function]}
-  />
+    style={
+      Object {
+        "background": undefined,
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "flex",
+        "fontFamily": "Lato, sans-serif",
+        "fontSize": "20px",
+        "height": "40px",
+        "justifyContent": "space-between",
+        "lineHeight": "30px",
+        "padding": "5px 0 5px 20px",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "padding": "0px 30px 0px 0px",
+        }
+      }
+    />
+    <ArrowIcon
+      isOpened={false}
+    />
+  </div>
   <div
     style={
       Object {
         "display": "none",
-        "height": undefined,
+        "height": 450,
       }
     }
   >
     <Frame
-      conf={Object {}}
+      conf={
+        Object {
+          "closedStyle": "chat",
+          "desktopHeight": 450,
+          "desktopWidth": 370,
+          "displayMessageTime": true,
+        }
+      }
+      iframeSrc="http://localhost:8080/chat.html"
     />
   </div>
 </div>

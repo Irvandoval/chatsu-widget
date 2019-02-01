@@ -14,11 +14,11 @@ const ArrowIcon = props => {
         <line x1="1" y1="15" 
           x2="15" y2="1" 
           stroke="white" 
-          stroke-width="1"/>
+          strokeWidth="1"/>
         <line x1="1" y1="1" 
           x2="15" y2="15" 
           stroke="white" 
-          stroke-width="1"/>
+          strokeWidth="1"/>
         </svg>
         :
         <svg style={{

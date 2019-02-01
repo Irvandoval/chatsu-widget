@@ -87,12 +87,12 @@ export default class Chat extends Component {
       <div>
         <MessageArea messages={this.state.message} conf={this.props.conf}/>
 
-        <input class="textarea" type="text" placeholder={this.props.conf.placeholderText}
+        <input className="textarea" type="text" placeholder={this.props.conf.placeholderText}
           ref={input => this.input = input}
           onKeyPress={this.handleKeyPress}
         />
 
-        <a class="banner" href="https://github.com/serenovaLLC" target="_blank">
+        <a className="banner" href="https://github.com/serenovaLLC" target="_blank">
           Powered by <b>Serenova</b>
         </a>
       </div>

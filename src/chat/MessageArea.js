@@ -17,17 +17,17 @@ export default class MessageArea extends Component {
     const currentTime = new Date();
 
     return (
-      <ol class="chat">
+      <ol className="chat">
         {this.props.messages.map(({name, text, from, time}) => {
           if (from === 'visitor') {
             name = "You"
           }
           return (
-            <li class={from}>
-              <div class="msg">
+            <li className={from}>
+              <div className="msg">
                 <p>{name ? name + ": " + text : text}</p>
                 { (this.props.conf.displayMessageTime) ?
-                    <div class="time">
+                    <div className="time">
                       {
                         currentTime - new Date(time) < dayInMillis ?
                           dateFormat(time, "HH:MM") :
